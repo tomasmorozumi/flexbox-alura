@@ -1,7 +1,7 @@
 .flexContainer:last-child { margin-top: 2em; }
 body { margin: 0; padding: 0; }
 div { height: 50px; width: 50px; }
-div:nth-child(1) { background-color: red; width: 100px; height: 100px; }
+div:nth-child(1) { background-color: red; width: 50px; height: 50px; }
 div:nth-child(2) { background-color: blue; }
 div:nth-child(3) { background-color: green; }
 div:nth-child(4) { background-color: yellow; }
@@ -12,17 +12,21 @@ div:nth-child(8) { background-color: silver; }
 /*fin de configuracion*/
 
 .flexContainer {
+	/*
 	height: 800px;
+	display: flex;							TODOS LOS ELEMENTOS SE ACOMODAN EN UNA FILA
+	justify-content: center;				QUENDAN TODOS JUNTOS Y CENTRADOS 
+	justify-content: space-between;         SE GEN. UN ESPACIO ENTRE DE LOS ELEM. HASTA OCUPAR LA PANTALLA
+	justify-content: space-around;          SE GEN. UN ESPACIO ALREDEDOR DE LOS ELEM. HASTA OCUPAR LA PANTALLA
+	align-items: center;                    SE ALINEAN TODOS LOS ITEMS AL CENTRO DE
+	flex-direction: column;                 TODOS LOS ELEMENTOS QUE ESTAN EN FILAS POR EL display: flex; AHORA ESTAN DE COLUMNAS
+	*/
+
 	display: flex;
-	/* justify-content: center;				QUENDAN TODOS JUNTOS Y CENTRADOS */
-	/* justify-content: space-between;      SE GEN. UN ESPACIO ENTRE LOS ELEM. HASTA OCUPAR LA PANTALLA*/
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: column;
 }
 
 .flexItem {
-	
+	flex-grow: 1;
 }
 
 
